@@ -15,10 +15,11 @@ struct CardView: View {
       Image(systemName: "globe")
         .imageScale(.large)
         .foregroundColor(.accentColor)
-      NavigationView{
+      NavigationView {
         NavigationLink(destination: DefinitionView(viewController: viewController)) {
           Text("\(viewController.flashcard.command)")
         }
+        .onAppear() { viewController.updateFlashcard() }
       }
     }
     .padding()

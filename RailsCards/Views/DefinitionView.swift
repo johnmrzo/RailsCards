@@ -11,7 +11,14 @@ struct DefinitionView: View {
   let viewController: ViewController
   
   var body: some View {
-    Text("\(viewController.flashcard.definition)")
+    VStack {
+      Text("\(viewController.flashcard.definition)")
+        .padding(65)
+        .overlay(
+          RoundedRectangle(cornerRadius: 10.0)
+            .stroke(Color.gray)
+        )
+    }
   }
 }
 

@@ -16,9 +16,16 @@ struct CardView: View {
         .imageScale(.large)
         .foregroundColor(.accentColor)
       NavigationView {
-        NavigationLink(destination: DefinitionView(viewController: viewController)) {
-          Text("\(viewController.flashcard.command)")
+        ZStack {
+          NavigationLink(destination: DefinitionView(viewController: viewController)) {
+            Text("\(viewController.flashcard.command)")
+              .frame(width: 350.0, height: 200.0)
+          }
         }
+        .overlay(
+          RoundedRectangle(cornerRadius: 10.0)
+            .stroke(Color.gray)
+        )
         .onAppear() { viewController.updateFlashcard() }
       }
     }

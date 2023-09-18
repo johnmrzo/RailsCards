@@ -15,6 +15,7 @@
 		ECD3DB902AB8C1E200582C38 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB8F2AB8C1E200582C38 /* Deck.swift */; };
 		ECD3DB922AB8C3C800582C38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB912AB8C3C800582C38 /* ViewController.swift */; };
 		ECD3DB942AB8C71700582C38 /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB932AB8C71700582C38 /* DefinitionView.swift */; };
+		ECD3DB962AB8D10600582C38 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD3DB952AB8D10600582C38 /* Icon-76.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		ECD3DB8F2AB8C1E200582C38 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		ECD3DB912AB8C3C800582C38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECD3DB932AB8C71700582C38 /* DefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionView.swift; sourceTree = "<group>"; };
+		ECD3DB952AB8D10600582C38 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		ECD3DB6E2AB8C04900582C38 = {
 			isa = PBXGroup;
 			children = (
+				ECD3DB952AB8D10600582C38 /* Icon-76.png */,
 				ECD3DB792AB8C04900582C38 /* RailsCards */,
 				ECD3DB782AB8C04900582C38 /* Products */,
 			);
@@ -163,6 +166,7 @@
 			files = (
 				ECD3DB822AB8C04B00582C38 /* Preview Assets.xcassets in Resources */,
 				ECD3DB7F2AB8C04B00582C38 /* Assets.xcassets in Resources */,
+				ECD3DB962AB8D10600582C38 /* Icon-76.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

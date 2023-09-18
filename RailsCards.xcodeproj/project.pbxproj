@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		ECD3DB7B2AB8C04900582C38 /* RailsCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB7A2AB8C04900582C38 /* RailsCardsApp.swift */; };
-		ECD3DB7D2AB8C04900582C38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB7C2AB8C04900582C38 /* ContentView.swift */; };
+		ECD3DB7D2AB8C04900582C38 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB7C2AB8C04900582C38 /* CardView.swift */; };
 		ECD3DB7F2AB8C04B00582C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD3DB7E2AB8C04B00582C38 /* Assets.xcassets */; };
 		ECD3DB822AB8C04B00582C38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD3DB812AB8C04B00582C38 /* Preview Assets.xcassets */; };
+		ECD3DB8E2AB8C10D00582C38 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB8D2AB8C10D00582C38 /* Flashcard.swift */; };
+		ECD3DB902AB8C1E200582C38 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB8F2AB8C1E200582C38 /* Deck.swift */; };
+		ECD3DB922AB8C3C800582C38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB912AB8C3C800582C38 /* ViewController.swift */; };
+		ECD3DB942AB8C71700582C38 /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD3DB932AB8C71700582C38 /* DefinitionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECD3DB772AB8C04900582C38 /* RailsCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailsCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD3DB7A2AB8C04900582C38 /* RailsCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailsCardsApp.swift; sourceTree = "<group>"; };
-		ECD3DB7C2AB8C04900582C38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECD3DB7C2AB8C04900582C38 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ECD3DB7E2AB8C04B00582C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECD3DB812AB8C04B00582C38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECD3DB8D2AB8C10D00582C38 /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		ECD3DB8F2AB8C1E200582C38 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		ECD3DB912AB8C3C800582C38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ECD3DB932AB8C71700582C38 /* DefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		ECD3DB792AB8C04900582C38 /* RailsCards */ = {
 			isa = PBXGroup;
 			children = (
-				ECD3DB7A2AB8C04900582C38 /* RailsCardsApp.swift */,
-				ECD3DB7C2AB8C04900582C38 /* ContentView.swift */,
+				ECD3DB8A2AB8C0A500582C38 /* Views */,
+				ECD3DB892AB8C09900582C38 /* Controllers */,
+				ECD3DB882AB8C08E00582C38 /* Models */,
 				ECD3DB7E2AB8C04B00582C38 /* Assets.xcassets */,
 				ECD3DB802AB8C04B00582C38 /* Preview Content */,
 			);
@@ -65,6 +74,33 @@
 				ECD3DB812AB8C04B00582C38 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECD3DB882AB8C08E00582C38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3DB8D2AB8C10D00582C38 /* Flashcard.swift */,
+				ECD3DB8F2AB8C1E200582C38 /* Deck.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECD3DB892AB8C09900582C38 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3DB912AB8C3C800582C38 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ECD3DB8A2AB8C0A500582C38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3DB7A2AB8C04900582C38 /* RailsCardsApp.swift */,
+				ECD3DB7C2AB8C04900582C38 /* CardView.swift */,
+				ECD3DB932AB8C71700582C38 /* DefinitionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECD3DB7D2AB8C04900582C38 /* ContentView.swift in Sources */,
+				ECD3DB922AB8C3C800582C38 /* ViewController.swift in Sources */,
+				ECD3DB902AB8C1E200582C38 /* Deck.swift in Sources */,
+				ECD3DB7D2AB8C04900582C38 /* CardView.swift in Sources */,
+				ECD3DB942AB8C71700582C38 /* DefinitionView.swift in Sources */,
+				ECD3DB8E2AB8C10D00582C38 /* Flashcard.swift in Sources */,
 				ECD3DB7B2AB8C04900582C38 /* RailsCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
